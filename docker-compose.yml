@@ -1,0 +1,53 @@
+version: "3"
+
+networks:
+  s10:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.0.0/24
+
+services:
+
+    ##### Node  ####
+    node:
+        image: "node:10"
+        user: "node"
+        working_dir: /home/node/app
+        environment:
+          - NODE_ENV=production
+        volumes:
+          - ./backend:/home/node/app
+        expose:
+          - "3040"
+        command: "npm start"
+        networks:
+          s10:
+            ipv4_address: 172.28.0.10
+
+    ##### MONGO DB  ####
+    mongo:
+      image: mongo:3.4
+      ports:
+        - "37027:27017"
+      volumes:
+        - ./data/mongo:/data/db
+        - ./config/mongod.conf:/etc/mongod.conf
+      command: -f /etc/mongod.conf
+      networks:
+        s10:
+          ipv4_address: 172.28.0.11
+
+    ##### HTTP  ####   
+    apache:
+      image: httpd:2.4
+      ports:
+        - "8080:80"
+      volumes:
+        - ./www:/usr/local/apache2/htdocs/
+      networks:
+        s10:
+          ipv4_address: 172.28.0.12
+    
+
