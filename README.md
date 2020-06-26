@@ -1,4 +1,4 @@
-<h1>S10sul code challenge - Docker</h1>
+<h1>Code challenge - Docker</h1>
 
 <h3>App URL</h3>
 <p>docker-compose up<p>
