@@ -40,7 +40,7 @@ var app = (function () {
 
   function init(el) {
     const template = `
-        <h1>Showroom</h1>
+        <h1>My App</h1>
         <hr/>  
         ${Loading(items)}
         <button  class="btn btn-light">
@@ -61,7 +61,7 @@ var app = (function () {
 
   function render(el) {
     const template = `
-            <h1>Showroom</h1>
+            <h1>My App</h1>
             <div class="list-group" id="sortable">
             ${List(items)}
             </div>

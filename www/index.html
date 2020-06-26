@@ -1,22 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Getting Started</title>
-    <meta charset="utf-8">
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" sizes="180x180">
-  <link rel="icon" href="/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-  <link rel="manifest" href="/favicons/manifest.json">
-  <link rel="icon" href="/favicons/favicon.ico">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<meta name="theme-color" content="#563d7c">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
+    <title>Hello, world!</title>
   </head>
   <body>
-    <div class="container" style= "padding-top:20px">
-      <div id="app" ></div>
+    <div class="container">
+      <div class="row mb-2 mt-4">
+        <div class="col-sm">
+          <h1>Code Challenge</h1>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-sm mb-4">
+          <h2>Backend</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <p>This is a simple NodeJS with Express for CRUD operations.</p>
+          <ul class="list-unstyled">
+            <li>
+              <span class="text-success">GET</span>
+              http://172.28.0.10:3040/api/items
+            </li>
+            <li>
+              <span class="text-danger">DELETE</span>
+              http://172.28.0.10:3040/api/items/{id}
+            </li>
+            <li>
+              <span class="text-warning">POST</span>
+              http://172.28.0.10:3040/api/items/
+            </li>
+            <li>
+              <span class="text-primary">PUT</span>
+              http://172.28.0.10:3040/api/items/{id}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-sm mb-4">
+          <h2>Frontend</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="media">
+            <img
+              src="./assets/logo.png"
+              alt=""
+              style="width: 60px;"
+              class="mr-2"
+            />
+            <div class="media-body">
+              <h5 class="mt-0">Vue.JS</h5>
+              <p>
+                This is a Vue.JS app, created from vue-cli. Tailwind was used
+                for styling.
+              </p>
+              <a class="btn btn-primary mt-3 btn-sm" href="/vue/">Open</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="media">
+            <img
+              src="./assets/js.png"
+              alt=""
+              style="width: 60px;"
+              class="mr-2"
+            />
+            <div class="media-body">
+              <h5 class="mt-0">Vanilla JS</h5>
+              <p>
+                This is a challenge that it was presented to me a time ago. It
+                required to use vanilla JS. Jquery was allowed. The app was
+                bundled with webpack , and babel to be able to transpile JS.
+              </p>
+              <a class="btn btn-primary mt-3 btn-sm" href="/vanilla/">Open</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="bundle.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

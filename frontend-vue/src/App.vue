@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container mx-auto " v-on:keyup.esc="closeModal">
-    <h1>Showroom</h1>
+    <h1>My App</h1>
     <div>
       <draggable
         v-model="items"
@@ -118,6 +118,7 @@ import draggable from "vuedraggable";
 // eslint-disable-next-line no-unused-vars
 
 const APIURL = process.env.VUE_APP_APIURL;
+console.log(APIURL);
 const MAXLENGTH = 300;
 
 export default {
