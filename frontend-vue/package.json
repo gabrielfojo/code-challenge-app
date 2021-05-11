@@ -12,7 +12,7 @@
     "await-promises": "^1.0.6",
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "tailwindcss": "^1.4.6",
     "vue": "^2.6.11",
     "vuedraggable": "^2.23.2"
